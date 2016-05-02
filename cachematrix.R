@@ -4,7 +4,7 @@
 ## When makeCacheMatrix is invoked, it will create a matrix x and return a list containing functions to set/get x and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-        cachedInv <- NULL ## initialize inverse
+        cachedInv <- NULL ## first initialize inverse
         
         ## set x in parent env with the desired value, if inverse is already set, set it to NULL!
         set <- function(user_value = matrix()) {
